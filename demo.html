@@ -22,7 +22,11 @@
 
 <h1>Textarea</h1>
 
-<textarea></textarea>
+<textarea id="edit1"></textarea>
+
+<h1>Textarea with width &amp; height</h1>
+
+<textarea id="edit2"></textarea>
 
 <h1>Input</h1>
 
@@ -33,5 +37,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
 <script src="jquery.autoresize.js"></script>
 <script>
-	$('*').autoResize({minHeight:100,minWidth:300});
+	$('textarea#edit1').autoResize({minHeight:100});
+	$('textarea#edit2').autoResize({minHeight:100, minWidth:200, maxWidth:400, extraSpace:0, animate: false});
+	$('input').autoResize({minWidth:300});
 </script>
