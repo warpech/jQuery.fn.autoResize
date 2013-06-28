@@ -52,7 +52,7 @@
     padding: '0.49em' //this must be about the width of caps W character
   };
 
-  autoResize.resizableFilterSelector = 'textarea,input:not(input[type]),input[type=text],input[type=password]';
+  autoResize.resizableFilterSelector = 'textarea,input:not([type]),input[type=text],input[type=password]';
 
   autoResize.AutoResizer = AutoResizer;
 
